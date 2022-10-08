@@ -1,0 +1,142 @@
+[
+  {
+    "type": "vertex",
+    "label": "User",
+    "username": "ashleywu"
+  },
+  {
+    "type": "vertex",
+    "label": "User",
+    "username": "nicolesimpson"
+  },
+  {
+    "type": "vertex",
+    "label": "User",
+    "username": "pricelucas"
+  },
+  {
+    "type": "vertex",
+    "label": "Interest",
+    "name": "Sports"
+  },
+  {
+    "type": "vertex",
+    "label": "Interest",
+    "name": "Politics"
+  },
+  {
+    "type": "vertex",
+    "label": "Interest",
+    "name": "Nature"
+  },
+  {
+    "type": "vertex",
+    "label": "Interest",
+    "name": "Video Games"
+  },
+  {
+    "type": "vertex",
+    "label": "Interest",
+    "name": "Woodworking"
+  },
+  {
+    "type": "vertex",
+    "label": "Interest",
+    "name": "Cooking"
+  },
+  {
+    "type": "vertex",
+    "label": "StudyTime",
+    "name": "0-2"
+  },
+  {
+    "type": "vertex",
+    "label": "StudyTime",
+    "name": "2-4"
+  },
+  {
+    "type": "vertex",
+    "label": "StudyTime",
+    "name": "4-6"
+  },
+  {
+    "type": "vertex",
+    "label": "StudyTime",
+    "name": "6-8"
+  },
+  {
+    "type": "vertex",
+    "label": "StudyTime",
+    "name": "8-10"
+  },
+  {
+    "type": "vertex",
+    "label": "StudyTime",
+    "name": "10-12"
+  },
+  {
+    "type": "vertex",
+    "label": "TechnologyStack",
+    "name": "Java"
+  },
+  {
+    "type": "vertex",
+    "label": "TechnologyStack",
+    "name": "Nodejs"
+  },
+  {
+    "type": "vertex",
+    "label": "TechnologyStack",
+    "name": "AWS"
+  },
+  {
+    "type": "vertex",
+    "label": "Location",
+    "name": "Seoul"
+  },
+  {
+    "type": "vertex",
+    "label": "Location",
+    "name": "loc0"
+  },
+  {
+    "type": "vertex",
+    "label": "Location",
+    "name": "loc1"
+  },
+  {
+    "type": "vertex",
+    "label": "AgeRange",
+    "name": "0-10"
+  },
+  {
+    "type": "vertex",
+    "label": "AgeRange",
+    "name": "10-20"
+  },
+  {
+    "type": "vertex",
+    "label": "AgeRange",
+    "name": "20-30"
+  },
+  {
+    "type": "vertex",
+    "label": "AgeRange",
+    "name": "30-40"
+  },
+  {
+    "type": "vertex",
+    "label": "StudySize",
+    "name": "small"
+  },
+  {
+    "type": "vertex",
+    "label": "StudySize",
+    "name": "middle"
+  },
+  {
+    "type": "vertex",
+    "label": "StudySize",
+    "name": "big"
+  }
+]

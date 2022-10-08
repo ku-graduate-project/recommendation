@@ -1,0 +1,44 @@
+[
+  {
+    "type": "edge",
+    "label": "PreferTime",
+    "user": "ashleywu",
+    "name": "0-2"
+  },
+  {
+    "type": "edge",
+    "label": "PreferTime",
+    "user": "nicolesimpson",
+    "name": "0-2"
+  },
+  {
+    "type": "edge",
+    "label": "PreferTime",
+    "user": "pricelucas",
+    "name": "0-2"
+  },
+  {
+    "type": "edge",
+    "label": "HasStack",
+    "user": "ashleywu",
+    "name": "Java"
+  },
+  {
+    "type": "edge",
+    "label": "HasStack",
+    "user": "ashleywu",
+    "name": "Nodejs"
+  },
+  {
+    "type": "edge",
+    "label": "HasStack",
+    "user": "ashleywu",
+    "name": "AWS"
+  },
+  {
+    "type": "edge",
+    "label": "HasStack",
+    "user": "pricelucas",
+    "name": "AWS"
+  }
+]
