@@ -35,17 +35,47 @@ const findFriendsWithStack = async (username) => {
   .next()
 }
 
-// findFriendsWithStack('pricelucas').then((resp) => {
-//   console.log(resp.value)
-//   connection.close()
-// })
+const findFriendsWithLocation = async (username) => {
+  return g.V()
+  .has('User', 'username', username).as('user')
+  .out('LocatedIn')
+  .in_('LocatedIn')
+  .where(neq('user'))
+  .values('username')
+  .groupCount()
+  .next()
+}
+
+const findFriendsWithRange = async (username) => {
+  return g.V()
+  .has('User', 'username', username).as('user')
+  .out('HasRange')
+  .in_('HasRange')
+  .where(neq('user'))
+  .values('username')
+  .groupCount()
+  .next()
+}
+
+const findFriendsWithPreferSize = async (username) => {
+  return g.V()
+  .has('User', 'username', username).as('user')
+  .out('PreferSize')
+  .in_('PreferSize')
+  .where(neq('user'))
+  .values('username')
+  .groupCount()
+  .next()
+}
+
 let queryList = [
   findFriendsWithPreferTime('pricelucas'),
-  findFriendsWithStack('pricelucas')];
+  findFriendsWithStack('pricelucas'),
+  findFriendsWithLocation('pricelucas'),
+  findFriendsWithRange('pricelucas'),
+  findFriendsWithPreferSize('pricelucas')];
   
 const reduceFunction = (map1, map2) => {
-    // map2.forEach((k, v) => map1.merge(k, v, (v1, v2) -> v1 + v2));
-    // console.log(map1)
     for (let [key, value] of map2) {
       if(map1.get(key)){
         map1.set(key, value + map1.get(key))
@@ -56,7 +86,7 @@ const reduceFunction = (map1, map2) => {
     return map1;
   };
   
-Promise.all([findFriendsWithPreferTime('pricelucas'), findFriendsWithStack('pricelucas')]).then(values=>{
+Promise.all(queryList).then(values=>{
   const a = values.map(value=>value.value)
   .reduce(reduceFunction, new Map())
   console.log(a)
